@@ -40,3 +40,12 @@ alert(`Olá ${nome}, voce tem ${idade} anos`)
 let cidade = prompt("Você mora em Salvador?")
 let estado = prompt("Você mora na Bahia?")
 let cozinha = prompt("Você sabe cozinhar?")
+
+// Questão 3
+
+let a = 10
+let b = 25
+a=b
+b = b -= 15
+console.log("O novo valor de a é", a) // O novo valor de a é 25
+console.log("O novo valor de b é", b) //O novo valor de b é 10
