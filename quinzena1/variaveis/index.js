@@ -49,3 +49,14 @@ a=b
 b = b -= 15
 console.log("O novo valor de a é", a) // O novo valor de a é 25
 console.log("O novo valor de b é", b) //O novo valor de b é 10
+
+// Desafio
+
+let x = prompt("Digite um numero")
+let xNumero = Number(x)
+let y = prompt("digite mais um numero")
+let yNumero = Number(y)
+console.log(x += y)
+console.log(x *= y)
+
+
