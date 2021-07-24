@@ -57,7 +57,10 @@ function calculaIngressosEspetaculo() {
 
 // Exercício 8
 function checaStringsMesmoTamanho() {
-  // escreva seu código aqui
+  const msg1 = prompt('Escreva')
+  const msg2 = prompt('escreva')
+  const mensagem = msg1.length == msg2.length
+  console.log(mensagem)
 }
 
 // Exercício 9
