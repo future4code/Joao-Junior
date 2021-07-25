@@ -114,5 +114,9 @@ function checaAnoBissexto() {
 
 // Exercício 12
 function checaValidadeInscricaoLabenu() {
-  
+  const age = prompt('texto')
+  const educacao = prompt('texto')
+  const horario = prompt('texto')
+  const resultado = (typeof age) === (typeof educacao) === (typeof horario)
+  console.log(resultado)
 }
