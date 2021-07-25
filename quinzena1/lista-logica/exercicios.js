@@ -22,7 +22,10 @@ function imprimeMensagem() {
 
 // Exercício 1
 function calculaAreaRetangulo() {
-  // escreva seu código aqui
+  const base = Number(prompt('area1'))
+  const altura = Number(prompt('area2'))
+  const area = base*altura
+  console.log(area)
 }
 
 // Exercício 2
@@ -65,7 +68,11 @@ function checaStringsMesmoTamanho() {
 
 // Exercício 9
 function checaIgualdadeDesconsiderandoCase() {
-  // escreva seu código aqui
+  const msg = prompt('mensg')
+  const msg2 = prompt('msg')
+  const mensagem1 = msg.toLocaleLowerCase
+  const mensagem2 = msg2.toLocaleLowerCase
+  console.log((msg.length).toLocaleString == (msg2.length).toLocaleString)
 }
 
 // Exercício 10
@@ -80,5 +87,5 @@ function checaAnoBissexto() {
 
 // Exercício 12
 function checaValidadeInscricaoLabenu() {
-  // escreva seu código aqui
+  
 }
