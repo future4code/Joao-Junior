@@ -117,6 +117,9 @@ function checaValidadeInscricaoLabenu() {
   const age = prompt('texto')
   const educacao = prompt('texto')
   const horario = prompt('texto')
-  const resultado = (typeof age) === (typeof educacao) === (typeof horario)
-  console.log(resultado)
+  
+  let idade = (age === "sim")
+  let temEducacao = (educacao === "sim")
+  let temhorario = (horario === "sim")
+  console.log(idade && temEducacao && temhorario)
 }
