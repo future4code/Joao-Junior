@@ -97,6 +97,26 @@ console.log(perfil("Joao", 30, "Salvador", "estudante"))
     }
     console.log(`Divisão:` , divisao(10,5))
 
+    // Desafio
+    //1. a)
+    const aula = (matematica) => {
+        return matematica * 2
+    }
+    console.log(aula(2))
     
-   
-    
+    //  b)
+    const calculo = (base,altura) =>{
+        return base * altura
+    }
+    console.log(calculo(2,5))
+
+    //2.
+     
+    function minhaFuncao(a, b,){
+        const cateto1 = a*a
+        const cateto2 = b*b
+        const hip = Math.sqrt(cateto1 + cateto2)
+        return hip        
+    }
+
+    console.log(minhaFuncao(2,4))
