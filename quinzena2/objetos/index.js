@@ -21,3 +21,57 @@ b) Acreito que tenha aparecido o false porque na constante pessoa, a chave backe
 
 
 */
+//   Exercícios de escrita de código
+// 1.
+//a)
+/* const humano = {
+    nome: "João",
+    apelidos: ["Nininho", "John", "Juan"]
+}
+//b)
+const novoHumano = {
+    ...humano,
+    apelidos: ["Nino","Juninho","Canhotinha"]
+} */
+
+/* console.log(novoHumano.apelidos) */
+
+// 2.
+// a)
+
+   /*  const pessoa1 = {
+        nome: "carlos",
+        idade: '35 anos',
+        profissao: 'eletricista'
+    }
+    const pessoa2 = {
+        nome: "Thalia",
+        idade: "24",
+        profissao: "Designer"
+    }     */
+// b)
+    const pessoa1 = {
+        nome: "carlos",
+        idade: '35 anos',
+        profissao: 'eletricista'
+    }
+    const pessoa2 = {
+        nome: "Thalia",
+        idade: "24",
+        profissao: "Designer"
+    }     
+
+    const imprimearray = (objeto1, objeto2) => [
+        objeto1.nome,
+        objeto1.nome.length,
+        objeto1.idade,
+        objeto1.profissao,
+        objeto1.profissao.length,
+        objeto2.nome,
+        objeto2.nome.length,
+        objeto2.idade,
+        objeto2.profissao,
+        objeto2.profissao.length,
+    ]
+
+    console.log(imprimearray(pessoa1,pessoa2))
