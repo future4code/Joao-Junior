@@ -24,7 +24,7 @@ b) Acreito que tenha aparecido o false porque na constante pessoa, a chave backe
 //   Exercícios de escrita de código
 // 1.
 //a)
-/* const humano = {
+const humano = {
     nome: "João",
     apelidos: ["Nininho", "John", "Juan"]
 }
@@ -32,14 +32,14 @@ b) Acreito que tenha aparecido o false porque na constante pessoa, a chave backe
 const novoHumano = {
     ...humano,
     apelidos: ["Nino","Juninho","Canhotinha"]
-} */
+}
 
-/* console.log(novoHumano.apelidos) */
+console.log(novoHumano.apelidos)
 
 // 2.
 // a)
 
-   /*  const pessoa1 = {
+    const pessoa1 = {
         nome: "carlos",
         idade: '35 anos',
         profissao: 'eletricista'
@@ -50,7 +50,7 @@ const novoHumano = {
         profissao: "Designer"
     }     */
 // b)
-    const pessoa1 = {
+     const pessoa1 = {
         nome: "carlos",
         idade: '35 anos',
         profissao: 'eletricista'
@@ -74,4 +74,26 @@ const novoHumano = {
         objeto2.profissao.length,
     ]
 
-    console.log(imprimearray(pessoa1,pessoa2))
+     console.log(imprimearray(pessoa1,pessoa2)) 
+
+// 3. a), b)
+    let carrinho = []
+    let fruta1 = {
+        nome: 'manga',
+        disponibilidade: true        
+    }
+    let fruta2 = {
+        nome: 'pera',
+        disponibilidade: true
+    }
+    let fruta3 = {
+        nome: 'banana',
+        disponibilidade: true
+    }
+    const feira = (fruta1, fruta2, fruta3) => [
+        carrinho[0] = fruta1,
+        carrinho[1] = fruta2,
+        carrinho[2] = fruta3
+
+    ]
+    console.log(feira(fruta1, fruta2, fruta3))
