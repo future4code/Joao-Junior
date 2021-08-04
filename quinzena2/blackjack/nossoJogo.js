@@ -10,3 +10,12 @@
  * 
  * 
  */
+    console.log("Bem vindo ao jogo de Blackjack!")
+    let pergunta = confirm('Quer iniciar uma nova rodada?')
+        if (pergunta != true){
+      console.log('O jogo acabou.')
+    }
+    
+    
+    console.log(comprarCarta())
+    
