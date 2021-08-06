@@ -21,7 +21,9 @@ for (let numero[i] of lista) {
 let bichos = Number(prompt('Quantos animais voce tem?'))
 if ( bichos == 0 ){
     console.log('Que pena. você pode adotar um pet!')
-} else if (bichos > 0){
-    let animais = prompt("digite o nome dos seus animais")
-    console.log(animais)
+} for (let i = 0; i < bichos;i++){
+    let arrayanimais = []
+    let nomePet = prompt("Qual o nome de seu pet?")
+    arrayanimais = nomePet
+    console.log(nomePet)
 }
