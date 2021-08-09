@@ -11,7 +11,7 @@
  * 
  */
 // 8)
-    let pergunta = confirm('Quer iniciar uma nova rodada?')
+    /* let pergunta = confirm('Quer iniciar uma nova rodada?')
         if (pergunta){
          let usuario1Carta = comprarCarta()
          let usuario2Carta = comprarCarta()
@@ -48,4 +48,4 @@
 
       } else {
          console.log('O jogo acabou.')
-      }
+      } */

@@ -10,7 +10,7 @@
  * 
  * 
  */
-/*     console.log("Bem vindo ao jogo de Blackjack!")
+    console.log("Bem vindo ao jogo de Blackjack!")
     let pergunta = confirm('Quer iniciar uma nova rodada?')
         if (pergunta){
          let usuario1Carta = comprarCarta()
@@ -34,7 +34,7 @@
       } else {
          console.log('O jogo acabou.')
       }
-     */
+    
     
     
     
