@@ -10,7 +10,7 @@
  * 
  * 
  */
-
+// 8)
     let pergunta = confirm('Quer iniciar uma nova rodada?')
         if (pergunta){
          let usuario1Carta = comprarCarta()
@@ -19,9 +19,16 @@
             let usuario1Carta = comprarCarta()
             let usuario2Carta = comprarCarta()
          }
+
          let computador1Carta = comprarCarta()
-         let computador2Carta = comprarCarta()
-         if (computador1Carta.texto && computador2Carta.texto === "A" ){
+
+         let confirmação = confirm(`Suas cartas são ${usuario1Carta.texto} ${usuario2Carta.texto}. A carta revelada do computador é ${computador1Carta.texto} Voce deseja comprar mais uma carta?`)
+            if (!confirmação){
+               console.log("ok")
+            }
+            let computador2Carta = comprarCarta()
+
+            if (computador1Carta.texto && computador2Carta.texto === "A" ){
             let computador1Carta = comprarCarta()
             let computador2Carta = comprarCarta()
          }
