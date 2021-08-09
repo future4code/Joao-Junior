@@ -12,10 +12,29 @@
  */
     console.log("Bem vindo ao jogo de Blackjack!")
     let pergunta = confirm('Quer iniciar uma nova rodada?')
-        if (pergunta != true){
-      console.log('O jogo acabou.')
-    }
+        if (pergunta){
+         let usuario1Carta = comprarCarta()
+         let usuario2Carta = comprarCarta()
+         let computador1Carta = comprarCarta()
+         let computador2Carta = comprarCarta()
+         let somaUsuario = usuario1Carta.valor + usuario2Carta.valor
+         let somaPc = computador1Carta.valor + computador2Carta.valor
+
+         console.log(`Usuário - cartas:${usuario1Carta.texto} ${usuario2Carta.texto}  - pontuação ${somaUsuario}`)
+         console.log(`Computador - cartas: ${computador1Carta.texto} ${computador2Carta.texto}  - pontuação ${somaPc}`)
+         if (somaUsuario > somaPc){
+            console.log("Usuario venceu!")
+         } else if (somaUsuario < somaPc){
+            console.log('Computador venceu!')
+         } else if (somaUsuario == somaPc){
+            console.log('Empate!')
+         }
+
+
+      } else {
+         console.log('O jogo acabou.')
+      }
     
     
-    console.log(comprarCarta())
+    
     
