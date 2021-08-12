@@ -11,16 +11,20 @@ function inverteArray(array) {
 // EXERCÍCIO 02
 function retornaNumerosParesElevadosADois(array) {
   let numerosPares = array.filter(n => n%2 == 0)
-  let numerosParesAoQuadrado = numerosPares.map(function (x)
-   { return Math.pow(x,2)})
+  let numerosParesAoQuadrado = numerosPares.map( n =>
+     (Math.pow(n,2)))
     return numerosParesAoQuadrado   
     
 }
 retornaNumerosParesElevadosADois()
 // EXERCÍCIO 03
 function retornaNumerosPares(array) {
+  let numerosPares = array.filter(n => (n%2 == 0))
+  return numerosPares
+ }
+ 
+ retornaNumerosPares()
 
-}
 
 // EXERCÍCIO 04
 function retornaMaiorNumero(array) {
