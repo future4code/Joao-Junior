@@ -28,8 +28,14 @@ function retornaNumerosPares(array) {
 
 // EXERCÍCIO 04
 function retornaMaiorNumero(array) {
+  let maiorNumero = array.reduce(function(a,b) {
+    return Math.max(a,b)
+  })
+  return maiorNumero
+  }
+  
+  retornaMaiorNumero()
 
-}
 
 // EXERCÍCIO 05
 function retornaQuantidadeElementos(array) {
