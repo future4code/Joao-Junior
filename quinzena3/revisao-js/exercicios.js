@@ -1,21 +1,21 @@
 // EXERCÍCIO 01
 function inverteArray(array) {
-  let saida = [];
-  for (let i = 0; i<= array.length; i++){
-      saida.push(array)
-  }
-
-  return saida
-}
-inverteArray()
+    let saida = []
+    while (array.length){
+     saida.push(array.pop())
+    } 
+     return saida
+    }
+    inverteArray()
 
 // EXERCÍCIO 02
 function retornaNumerosParesElevadosADois(array) {
-  if( array.value % 2 ==0) {
-    return array.Math.pow()
-  } 
+  let numerosPares = array.filter(n => n%2 == 0)
+  let numerosParesAoQuadrado = numerosPares.map(Math.pow)
+    return numerosParesAoQuadrado
+   
 }
-
+retornaNumerosParesElevadosADois()
 // EXERCÍCIO 03
 function retornaNumerosPares(array) {
 
