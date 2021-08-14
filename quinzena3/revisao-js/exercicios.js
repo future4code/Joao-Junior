@@ -67,15 +67,30 @@ retornaExpressoesBooleanas()
 
 // EXERCÍCIO 07
 function retornaNNumerosPares(n) {
-
+  let i = 0
+  let arrayPar = []
+  while(i < n && n %2 == 0){
+     arrayPar = n    
+  }
+  i++
 }
+
+retornaNNumerosPares()
 
 // EXERCÍCIO 08
 function checaTriangulo(a, b, c) {
-  // return 'Escaleno'
-  // return 'Equilátero'
-  // return 'Isósceles'
+  let ladoA = a
+  let ladoB = b
+  let ladoC = c
+  if (ladoA == ladoB && ladoB == ladoC && ladoC == ladoA){
+    return 'Equilátero'
+  } else if (ladoA == ladoB || ladoB == ladoC || ladoC == ladoA){
+    return 'Isósceles'
+  } else {
+    return 'Escaleno'
+  }
 }
+checaTriangulo()
 
 // EXERCÍCIO 09
 function comparaDoisNumeros(num1, num2) {
