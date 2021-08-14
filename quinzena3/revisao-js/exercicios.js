@@ -67,12 +67,13 @@ retornaExpressoesBooleanas()
 
 // EXERCÍCIO 07
 function retornaNNumerosPares(n) {
-  let i = 0
-  let arrayPar = []
-  while(i < n && n %2 == 0){
-     arrayPar = n    
+  const arrayPar = []
+  for (let numero = 0;arrayPar.length < n;numero++) {
+    if (numero % 2 === 0) {
+      arrayPar.push(numero)
+    }
   }
-  i++
+  return arrayPar
 }
 
 retornaNNumerosPares()
