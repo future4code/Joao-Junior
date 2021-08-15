@@ -5,7 +5,7 @@ function inverteArray(array) {
      saida.push(array.pop())
     } 
      return saida
-    }
+}
     inverteArray()
 
 // EXERCÍCIO 02
@@ -32,7 +32,7 @@ function retornaMaiorNumero(array) {
     return Math.max(a,b)
   })
   return maiorNumero
-  }
+}
   
   retornaMaiorNumero()
 
@@ -122,12 +122,35 @@ comparaDoisNumeros()
 
 // EXERCÍCIO 10
 function segundoMaiorEMenor(array) {
+  let segundoMaioreMenor = []
 
+  let min = Math.min.apply(null, array)
+    array.splice(array.indexOf(min), 1)
+  let max = Math.max.apply(null, array) 
+    array.splice(array.indexOf(max), 1)     
+  
+  
+      segundoMaioreMenor.push(Math.min.apply(null,array))
+      segundoMaioreMenor.push(Math.max.apply(null, array))
+      
+  
+      return segundoMaioreMenor.reverse()
 }
+segundoMaiorEMenor()
 
 // EXERCÍCIO 11
 function ordenaArray(array) {
-
+const tamanho = array.length
+  for (let i = 0;i < tamanho;i++) {
+    for (let j = 0;j < tamanho;j++) {
+      if (array[j] > array[j + 1]) {
+        let tmp = array[j]
+        array[j] = array[j + 1]
+        array[j + 1] = tmp
+      }
+    }
+  }
+  return array 
 }
 
 // EXERCÍCIO 12
