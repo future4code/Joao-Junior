@@ -118,7 +118,7 @@ function comparaDoisNumeros(num1, num2) {
 
 }
 
-comparaDoisNumeros()
+
 
 // EXERCÍCIO 10
 function segundoMaiorEMenor(array) {
@@ -155,7 +155,14 @@ const tamanho = array.length
 
 // EXERCÍCIO 12
 function filmeFavorito() {
+  let filme = {
+    nome: 'O Diabo Veste Prada',
+    ano: 2006,
+    diretor: 'David Frankel',
+    atores: ['Meryl Streep', 'Anne Hathaway', 'Emily Blunt', 'Stanley Tucci']
+  }
 
+  return filme
 }
 
 // EXERCÍCIO 13
@@ -165,7 +172,14 @@ function imprimeChamada() {
 
 // EXERCÍCIO 14
 function criaRetangulo(lado1, lado2) {
+  const retangulo = {
+    largura: lado1,
+    altura: lado2,
+    perimetro: 2 * (lado1 + lado2),
+    area: lado1 * lado2
+  }
 
+  return retangulo
 }
 
 // EXERCÍCIO 15
