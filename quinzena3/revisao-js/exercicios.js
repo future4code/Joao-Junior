@@ -1,46 +1,45 @@
 // EXERCÍCIO 01
 function inverteArray(array) {
-    let saida = []
+  let saida = []
     while (array.length){
-     saida.push(array.pop())
+     saida.push(array.pop()) //Usa o push para incluir na var saida
     } 
-     return saida
+      return saida
 }
     inverteArray()
 
 // EXERCÍCIO 02
 function retornaNumerosParesElevadosADois(array) {
-  let numerosPares = array.filter(n => n%2 == 0)
+  let numerosPares = array.filter(n => n%2 == 0) // filtra os pares
   let numerosParesAoQuadrado = numerosPares.map( n =>
-     (Math.pow(n,2)))
+     (Math.pow(n,2))) // eleva numeros ao quadrado
     return numerosParesAoQuadrado   
     
 }
 retornaNumerosParesElevadosADois()
 // EXERCÍCIO 03
 function retornaNumerosPares(array) {
-  let numerosPares = array.filter(n => (n%2 == 0))
-  return numerosPares
+  let numerosPares = array.filter(n => (n%2 == 0)) // filtra os numeros pares
+    return numerosPares
  }
  
- retornaNumerosPares()
 
 
 // EXERCÍCIO 04
 function retornaMaiorNumero(array) {
   let maiorNumero = array.reduce(function(a,b) {
-    return Math.max(a,b)
+    return Math.max(a,b) //.reduce executa a função callback. function(a,b) identifica elementos da array e retorna maior numero
   })
-  return maiorNumero
+    return maiorNumero
 }
   
-  retornaMaiorNumero()
+  
 
 
 // EXERCÍCIO 05
 function retornaQuantidadeElementos(array) {
   let parametros = array.length
-  return parametros
+    return parametros
 }
 retornaQuantidadeElementos()
 
@@ -51,25 +50,25 @@ const booleano1 = true
 const booleano2 = false
 const booleano3 = !booleano2 
 const booleano4 = !booleano3 
-let boo1 = booleano1 && booleano2 && !booleano4 
-let boo2 = (booleano1 && booleano2) || !booleano3 
-let boo3 = (booleano2 || booleano3) && (booleano4 || booleano1) 
-let boo4 = !(booleano2 && booleano3) || !(booleano1 && booleano3) 
-let boo5 = !(booleano1) && !(booleano3) || (!booleano4 && booleano3 && booleano3)
-let adiciona1 = respostas.push(boo1)
-let adiciona2 = respostas.push(boo2)
-let adiciona3 = respostas.push(boo3)
-let adiciona4 = respostas.push(boo4) 
-let adiciona5 = respostas.push(boo5)
-return respostas
+  let boo1 = booleano1 && booleano2 && !booleano4 
+  let boo2 = (booleano1 && booleano2) || !booleano3 
+  let boo3 = (booleano2 || booleano3) && (booleano4 || booleano1) 
+  let boo4 = !(booleano2 && booleano3) || !(booleano1 && booleano3) 
+  let boo5 = !(booleano1) && !(booleano3) || (!booleano4 && booleano3 && booleano3)
+    let adiciona1 = respostas.push(boo1)
+    let adiciona2 = respostas.push(boo2)
+    let adiciona3 = respostas.push(boo3)
+    let adiciona4 = respostas.push(boo4) 
+    let adiciona5 = respostas.push(boo5)
+      return respostas
 }
-retornaExpressoesBooleanas()
+
 
 // EXERCÍCIO 07
 function retornaNNumerosPares(n) {
-  const arrayPar = []
-  for (let numero = 0;arrayPar.length < n;numero++) {
-    if (numero % 2 === 0) {
+  const arrayPar = []  
+  for (let numero = 0;arrayPar.length < n;numero++) { 
+    if (numero % 2 === 0) {  // condição par. 
       arrayPar.push(numero)
     }
   }
@@ -122,21 +121,36 @@ function comparaDoisNumeros(num1, num2) {
 
 // EXERCÍCIO 10
 function segundoMaiorEMenor(array) {
-  let segundoMaioreMenor = []
+  // Tentei de outra forma mas nao obtive resultado, então usei o modelo sugerido.
+  let menor = Infinity
+  let maior = -Infinity
+  let segundoMenor = Infinity
+  let segundoMaior = -Infinity
+  let novoArray = []
 
-  let min = Math.min.apply(null, array)
-    array.splice(array.indexOf(min), 1)
-  let max = Math.max.apply(null, array) 
-    array.splice(array.indexOf(max), 1)     
-  
-  
-      segundoMaioreMenor.push(Math.min.apply(null,array))
-      segundoMaioreMenor.push(Math.max.apply(null, array))
-      
-  
-      return segundoMaioreMenor.reverse()
+  for (let i of array) {
+    if (i < menor) {
+      menor = i
+    }
+    if (i > maior) {
+      maior = i
+    }
+  }
+
+  for (let i of array) {
+    if (i < segundoMenor && i !== menor) {
+      segundoMenor = i
+    }
+    if (i > segundoMaior && i !== maior) {
+      segundoMaior = i
+    }
+  }
+  novoArray.push(segundoMaior)
+  novoArray.push(segundoMenor)
+
+  return novoArray
 }
-segundoMaiorEMenor()
+
 
 // EXERCÍCIO 11
 function ordenaArray(array) {
@@ -201,7 +215,7 @@ function criaRetangulo(lado1, lado2) {
 // EXERCÍCIO 15
 function anonimizaPessoa(pessoa) {
   return {
-    ...pessoa,
+    ...pessoa,    // ... altera específico do objeto por nome dado.
     nome: 'ANÔNIMO'
   }
 }
