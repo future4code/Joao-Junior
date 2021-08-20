@@ -1,0 +1,45 @@
+body{
+background-color: rgba(227, 227, 230, 0.185);
+}
+
+
+.titulo{
+    text-align: center;
+    }
+
+    a:hover {
+        background-color: yellow;
+      }
+
+
+nav{
+    text-align: center;
+    
+}
+
+.titulo-add-produto{
+    text-align: center;
+    background-color: cornsilk;
+    border-radius: 20cm;
+    padding: 5px;
+    font-size: 1cm;
+}
+
+.funcionarios{
+    background-color: cornsilk;
+    padding: 5px;
+    border-radius: 20cm;
+    font-size: 1cm;
+    text-align: center;
+    }
+
+
+
+
+.titulo-estoque{ 
+    text-align: center;
+    background-color: cornsilk;
+    border-radius: 20cm;
+    padding: 5px;
+    font-size: 1cm;
+}
