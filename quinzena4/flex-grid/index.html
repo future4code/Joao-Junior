@@ -34,6 +34,30 @@
         #confeitaria{
             padding-left: 30px;
         }
+
+        aside{
+            display: flex;
+            flex-direction: column;
+            height: 100vh;            
+            padding: 10px;
+            
+        }
+
+        .horizontal{
+            display: flex;
+            flex-direction: row;
+            justify-content: start;
+            padding: 10px;            
+        }
+        .paragrafo{
+            padding: 10px;
+            padding-left: 30px;
+        }
+        .seta{
+            padding: 10px;
+            padding-left: 80px;
+            text-align: center;
+        }
     </style>
 </head>
 <body>
@@ -42,6 +66,21 @@
         <h1 id="confeitaria">Confeitaria</h1>
         <button class="botao-login">Login</button>
     </header>
+
+    <aside>
+        <div class="horizontal">
+            <p> <img src="imagens/casa.png" alt="casa"></p> <p class="paragrafo">HOME</p> <p class="seta" style="padding-left: 114px;" >></p>
+        </div>
+        <div class="horizontal">
+            <p> <img src="imagens/docinho.png" alt="docinho"></p> <p class="paragrafo">PRODUTOS</p> <p class="seta">></p>
+        </div>
+        <div class="horizontal">
+            <p> <img src="imagens/carrinho.png" alt="carrinho"></p> <p class="paragrafo">CARRINHO</p> <p class="seta">></p>
+        </div>
+        <div class="horizontal">
+            <p> <img src="imagens/perfil.webp" alt="perfil"></p> <p class="paragrafo">PERFIL</p> <p class="seta" style="padding-left: 111px;">></p>
+        </div>
+    </aside>
     
 </body>
 </html>
