@@ -17,8 +17,8 @@ h2 {
 }
 
 input {
-    height: 20px;
-    width: 500px;
+    height: 10px;
+    width: 300px;
     border-width: 0px 0px 3px 0px;
 }
 
@@ -142,8 +142,7 @@ td button:hover{
 
 #div-tabela {
     display: grid;
-    justify-items: center;
-    background-color: #fe8002d5;
+    justify-items: center;    
     padding: 10px;
 }
 
