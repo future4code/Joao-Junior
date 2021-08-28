@@ -15,11 +15,28 @@
             height: 30px;
         }
         header{
-            display: flex;
-            padding: 10px;
+            display: flex;            
             background-color: #c71585;
+            justify-content: space-between;
+            align-items: center;
+            height: 60px;
+            padding: 0 20px;
             
         }
+
+        nav{
+            width: 200px;
+            background-color: #f2d0e0;
+            padding: 10px;
+        }
+
+        .botao-nav{
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+        }
+
+
         .botao-login{
             justify-content: end;
             margin-left: 900px;
@@ -31,9 +48,8 @@
             background-color: #C7027F;
         }
 
-        #confeitaria{
-            padding-left: 30px;
-        }
+       
+        
 
         aside{
             display: flex;
@@ -62,8 +78,8 @@
             text-align: center;
         }
         .bolo-de-chocolate > img{
-            width: 200px;
-            height: 200px;
+            width: 150px;
+            height: 150px;
         }
         .bolo-de-chocolate > h3,p {
             text-align: center;
@@ -79,6 +95,7 @@
             column-gap: 5px;
 
         }
+       
 
         article{
             display: grid;
@@ -86,34 +103,63 @@
             grid-template-rows: 1fr 1fr 1fr;
             grid-template-columns: 1fr 1fr 1fr;
         }
+
+        footer{
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            background-color: mediumvioletred;
+            height: 60px;
+        }
    
 
     </style>
 </head>
 <body>
     <header>
-        <img src="imagens/cake.png" alt="iconebolo">
-        <h1 id="confeitaria">Confeitaria</h1>
+        
+        <div class="icone-e-texto">
+            <img src="imagens/cake.png" alt="iconebolo">
+            <h2>Confeitaria</h2>
+        </div>
         <button class="botao-login">Login</button>
     </header>
 
     
     <article>
         
-        <aside>
-            <div class="horizontal">
-                <p> <img src="imagens/casa.png" alt="casa"></p> <p class="paragrafo">HOME</p> <p class="seta" style="padding-left: 114px;" >></p>
+        <nav>
+            <div class="botao-nav">
+                 <div class="icone-e-texto">
+                     <img src="imagens/casa.png" alt="casa">
+                     <p>HOME</p>
+                 </div>
+
+                 <img src="imagens/setaDireita.png" alt="setaDireita">
             </div>
-            <div class="horizontal">
-                <p> <img src="imagens/docinho.png" alt="docinho"></p> <p class="paragrafo">PRODUTOS</p> <p class="seta">></p>
+        
+            <div class="botao-nav">
+                <div class="icone-e-texto">
+                    <img src="imagens/docinho.png" alt="docinho">
+                    <p>PRODUTOS</p>
+                </div >
+                <img src="imagens/setaDireita.png" alt="setaDireita">
             </div>
-            <div class="horizontal">
-                <p> <img src="imagens/carrinho.png" alt="carrinho"></p> <p class="paragrafo">CARRINHO</p> <p class="seta">></p>
+            <div class="botao-nav">
+                <div class="icone-e-texto"> 
+                    <img src="imagens/carrinho.png" alt="carrinho">
+                    <p>CARRINHO</p>
+                </div>
+                <img src="imagens/setaDireita.png" alt="setaDireita"> 
             </div>
-            <div class="horizontal">
-                <p> <img src="imagens/perfil.webp" alt="perfil"></p> <p class="paragrafo">PERFIL</p> <p class="seta" style="padding-left: 111px;">></p>
+            <div class="botao-nav">
+                <div class="icone-e-texto"> 
+                    <img src="imagens/perfil.webp" alt="perfil">
+                    <p>PERFIL</p>
+                </div>
+                <img src="imagens/setaDireita.png" alt="setaDireita"> 
             </div>
-        </aside>
+        </nav>
         
         <!--Quadros de imagens dos bolos -->
         <div class="quadro">
@@ -130,7 +176,9 @@
         <div class="bolo-de-chocolate">
             <img src="imagens/boloBonito.jpg" alt="bolo"><h3>Bolo de Chocolate</h3>
             <p>Delicioso bolo de chocolate <br> molhadinho decorado com morangos</p>
-        </div>
+        </div> 
+    
+    
         <div class="bolo-de-chocolate">
             <img src="imagens/boloBonito.jpg" alt="bolo"><h3>Bolo de Chocolate</h3>
             <p>Delicioso bolo de chocolate <br> molhadinho decorado com morangos</p>
@@ -143,9 +191,12 @@
             <img src="imagens/boloBonito.jpg" alt="bolo"><h3>Bolo de Chocolate</h3>
             <p>Delicioso bolo de chocolate <br> molhadinho decorado com morangos</p>
         </div>
-    </div>      
+   
+    </div> 
 
     </article>
-    
+    <footer>
+        <p>Bolos feitos com ❤ </p>
+    </footer>
 </body>
 </html>
