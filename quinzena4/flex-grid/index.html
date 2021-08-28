@@ -32,8 +32,19 @@
 
         .botao-nav{
             display: flex;
+            flex-direction: row;
             align-items: center;
             justify-content: space-between;
+        }
+
+        .icone-e-texto {
+            display: flex;
+            flex-direction: row;
+            padding: 10px;
+        }
+
+        .icone-e-texto > p {
+            padding: 10px;
         }
 
 
@@ -119,8 +130,8 @@
     <header>
         
         <div class="icone-e-texto">
-            <img src="imagens/cake.png" alt="iconebolo">
-            <h2>Confeitaria</h2>
+            <img src="imagens/cake.png" style="padding: 2px;" alt="iconebolo"><h2 style="padding-left: 10px;"> Confeitaria</h2>
+            
         </div>
         <button class="botao-login">Login</button>
     </header>
@@ -130,6 +141,7 @@
         
         <nav>
             <div class="botao-nav">
+
                  <div class="icone-e-texto">
                      <img src="imagens/casa.png" alt="casa">
                      <p>HOME</p>
