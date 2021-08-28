@@ -40,6 +40,8 @@
             flex-direction: column;
             height: 100vh;            
             padding: 10px;
+            background-color: #f2d0e0;
+            margin-right: 75%;
             
         }
 
@@ -49,6 +51,7 @@
             justify-content: start;
             padding: 10px;            
         }
+    
         .paragrafo{
             padding: 10px;
             padding-left: 30px;
@@ -58,6 +61,33 @@
             padding-left: 80px;
             text-align: center;
         }
+        .bolo-de-chocolate > img{
+            width: 200px;
+            height: 200px;
+        }
+        .bolo-de-chocolate > h3,p {
+            text-align: center;
+        }
+       
+        .quadro{
+            display: grid;
+            grid-template-rows: 1fr 1fr 1fr;
+            grid-template-columns: 1fr 1fr 1fr;
+            justify-items: stretch;
+            align-items: center;
+            row-gap: 5px;
+            column-gap: 5px;
+
+        }
+
+        article{
+            display: grid;
+            height: 100vh;
+            grid-template-rows: 1fr 1fr 1fr;
+            grid-template-columns: 1fr 1fr 1fr;
+        }
+   
+
     </style>
 </head>
 <body>
@@ -67,20 +97,55 @@
         <button class="botao-login">Login</button>
     </header>
 
-    <aside>
-        <div class="horizontal">
-            <p> <img src="imagens/casa.png" alt="casa"></p> <p class="paragrafo">HOME</p> <p class="seta" style="padding-left: 114px;" >></p>
+    
+    <article>
+        
+        <aside>
+            <div class="horizontal">
+                <p> <img src="imagens/casa.png" alt="casa"></p> <p class="paragrafo">HOME</p> <p class="seta" style="padding-left: 114px;" >></p>
+            </div>
+            <div class="horizontal">
+                <p> <img src="imagens/docinho.png" alt="docinho"></p> <p class="paragrafo">PRODUTOS</p> <p class="seta">></p>
+            </div>
+            <div class="horizontal">
+                <p> <img src="imagens/carrinho.png" alt="carrinho"></p> <p class="paragrafo">CARRINHO</p> <p class="seta">></p>
+            </div>
+            <div class="horizontal">
+                <p> <img src="imagens/perfil.webp" alt="perfil"></p> <p class="paragrafo">PERFIL</p> <p class="seta" style="padding-left: 111px;">></p>
+            </div>
+        </aside>
+        
+        <!--Quadros de imagens dos bolos -->
+        <div class="quadro">
+        <div class="bolo-de-chocolate">
+            <img src="imagens/boloBonito.jpg" alt="bolo"><h3>Bolo de Chocolate</h3>
+            <p>Delicioso bolo de chocolate <br> molhadinho decorado com morangos</p>
         </div>
-        <div class="horizontal">
-            <p> <img src="imagens/docinho.png" alt="docinho"></p> <p class="paragrafo">PRODUTOS</p> <p class="seta">></p>
+        <div class="bolo-de-chocolate">
+            <img src="imagens/boloBonito.jpg" alt="bolo"><h3>Bolo de Chocolate</h3>
+            <p>Delicioso bolo de chocolate <br> molhadinho decorado com morangos</p>
         </div>
-        <div class="horizontal">
-            <p> <img src="imagens/carrinho.png" alt="carrinho"></p> <p class="paragrafo">CARRINHO</p> <p class="seta">></p>
+        <div class="bolo-de-chocolate"><img src="imagens/boloBonito.jpg" alt="bolo"><h3>Bolo de Chocolate</h3>
+            <p>Delicioso bolo de chocolate <br> molhadinho decorado com morangos</p></div>
+        <div class="bolo-de-chocolate">
+            <img src="imagens/boloBonito.jpg" alt="bolo"><h3>Bolo de Chocolate</h3>
+            <p>Delicioso bolo de chocolate <br> molhadinho decorado com morangos</p>
         </div>
-        <div class="horizontal">
-            <p> <img src="imagens/perfil.webp" alt="perfil"></p> <p class="paragrafo">PERFIL</p> <p class="seta" style="padding-left: 111px;">></p>
+        <div class="bolo-de-chocolate">
+            <img src="imagens/boloBonito.jpg" alt="bolo"><h3>Bolo de Chocolate</h3>
+            <p>Delicioso bolo de chocolate <br> molhadinho decorado com morangos</p>
         </div>
-    </aside>
+        <div class="bolo-de-chocolate">
+            <img src="imagens/boloBonito.jpg" alt="bolo"><h3>Bolo de Chocolate</h3>
+            <p>Delicioso bolo de chocolate <br> molhadinho decorado com morangos</p>
+        </div>
+        <div class="bolo-de-chocolate">
+            <img src="imagens/boloBonito.jpg" alt="bolo"><h3>Bolo de Chocolate</h3>
+            <p>Delicioso bolo de chocolate <br> molhadinho decorado com morangos</p>
+        </div>
+    </div>      
+
+    </article>
     
 </body>
 </html>
