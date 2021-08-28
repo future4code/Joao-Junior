@@ -1,15 +1,18 @@
-```function contaOcorrencias(arrayDeNumeros, numeroEscolhido) {
-    // Escreva seu código aqui
-  let vetor = arrayDeNumeros
-  let escolhido = numeroEscolhido
-  let contagem = 0 
-  if (vetor.forEach((v)=> (v === escolhido &&
-  contagem++))){
-  return `O número ${escolhido} aparece ${contagem}x`
-  } else if ( vetor.indexOf(numeroEscolhido) === -1){ return 'Número não encontrado'}
+function contaOcorrencias(arrayDeNumeros, numeroEscolhido) {
+    let contador = 0
+  for(let i = 0; i < arrayDeNumeros.length; i++){
+    if(arrayDeNumeros[i] === numeroEscolhido){
+      contador++
+    }
+    
   }
+  if (contador === 0){
+     return "Número não encontrado"
+  }
+   return `O número ${numeroEscolhido} aparece ${contador}x`
+}
   
     
   
 
-  console.log(contaOcorrencias([0,1,1,2,3]), 1)```
+  console.log(contaOcorrencias([0,1,1,2,3]), 1)
