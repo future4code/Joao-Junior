@@ -1,0 +1,24 @@
+*{
+    margin: 0%;
+    padding: 0%;
+}
+
+.page-container{
+    display: grid;
+    min-height: 100vh;
+    grid-template-rows: 70px 1fr 70px;
+    grid-template-columns: 1fr;
+}
+
+/* configurações da primeira página. */
+
+#main-pagina1{
+  display: grid;
+  min-height: 100vh;
+  grid-template-columns: repeat(4, 1fr);
+  
+}
+
+.imagens{
+    width: 100%;
+}
