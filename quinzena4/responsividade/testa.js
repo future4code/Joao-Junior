@@ -14,19 +14,16 @@ function filtraTarefas() {
       { titulo: "Assistir Novela", status: "todo", tempo: 90 }
    ]
   
-   let novaArray = tarefas.map((vetor, indice, array) => {
-       if( vetor.status == 'done') {
-           return vetor.titulo
-       }     
+   let novaArray = tarefas.filter((vetor, indice, array) => {
+       return vetor.status == 'done'           
+            
    })
 
-   /* let arrayTitulo = novaArray.filter((vetor,indice, array) =>{
-       if (vetor.status == 'done') {
-           return titulo
-       }
-   }) */
-
-   return novaArray
+   let arrayTitulo = novaArray.map((vetor,indice, array) =>{
+             return vetor.titulo
+    })
+ 
+   return arrayTitulo
 }
 
 console.log(filtraTarefas())
