@@ -1,0 +1,242 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Confeitaria</title>
+    <style>
+        * {
+            margin: 0%;
+            padding: 0%;
+        }
+        img{
+            width: 30px;
+            
+        }
+        header{
+            display: flex;            
+            background-color: #c71585;
+            justify-content: space-between;
+            align-items: center;
+            height: 60px;
+            padding: 0 20px;
+            grid-column: 1/-1;
+            
+        }
+
+        body{
+            min-height: 100vh;
+            display: grid;
+            grid-template-rows: 60px 1fr 60px;
+            grid-template-columns: 300px 1fr;
+        }
+
+        nav{
+            width: 200px;
+            background-color: #f2d0e0;
+            padding: 10px;
+        }
+
+        .botao-nav{
+            display: flex;
+            flex-direction: row;
+            align-items: center;
+            justify-content: space-between;
+        }
+
+        .icone-e-texto {
+            display: flex;
+            flex-direction: row;
+            padding: 10px;
+        }
+
+        .icone-e-texto > p {
+            padding: 10px;
+        }
+
+
+        .botao-login{
+            justify-content: end;
+            margin-left: 900px;
+            padding: 10px;
+            border-radius: 10px;
+            background-color: white;
+        }
+        .botao-login:hover{
+            background-color: #C7027F;
+        }
+
+       
+        
+
+        aside{
+            display: flex;
+            flex-direction: column;
+            height: 100vh;            
+            padding: 10px;
+            background-color: #f2d0e0;
+            margin-right: 75%;
+            
+        }
+
+        .horizontal{
+            display: flex;
+            flex-direction: row;
+            justify-content: start;
+            padding: 10px;            
+        }
+    
+        .paragrafo{
+            padding: 10px;
+            padding-left: 30px;
+        }
+        .seta{
+            padding: 10px;
+            padding-left: 80px;
+            text-align: center;
+        }
+        .card-produto{
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
+            align-items: center;
+            box-shadow: 2px 2px 5px darkgray;
+            text-align: center;
+        }
+
+        .bolo{
+            width: 100%;
+            
+        }
+       
+        .quadro{
+            display: grid;
+            grid-template-rows: 1fr 1fr 1fr;
+            grid-template-columns: 1fr 1fr 1fr;
+            justify-items: stretch;
+            align-items: center;
+            row-gap: 5px;
+            column-gap: 5px;
+
+        }
+       
+
+        article{
+            display: grid;
+            height: 100vh;
+            grid-template-rows: 1fr 1fr 1fr;
+            grid-template-columns: 1fr 1fr 1fr;
+        }
+
+        footer{
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            background-color: mediumvioletred;
+            height: 60px;
+            grid-column: 1/-1;
+        }
+
+        main{
+            display: grid;
+            grid-template-columns: repeat(4,1fr);
+            row-gap: 20px;
+            column-gap: 20px;
+            margin: 20px;
+        }
+   
+
+    </style>
+</head>
+<body>
+    <header>
+        
+        <div class="icone-e-texto">
+            <img src="imagens/cake.png" style="padding: 2px;" alt="iconebolo"><h2 style="padding-left: 10px;"> Confeitaria</h2>
+            
+        </div>
+        <button class="botao-login">Login</button>
+    </header>
+
+    
+    <article>
+        
+        <nav>
+            <div class="botao-nav">
+
+                 <div class="icone-e-texto">
+                     <img src="imagens/casa.png" alt="casa">
+                     <p>HOME</p>
+                 </div>
+
+                 <img src="imagens/setaDireita.png" alt="setaDireita">
+            </div>
+        
+            <div class="botao-nav">
+                <div class="icone-e-texto">
+                    <img src="imagens/docinho.png" alt="docinho">
+                    <p>PRODUTOS</p>
+                </div >
+                <img src="imagens/setaDireita.png" alt="setaDireita">
+            </div>
+            <div class="botao-nav">
+                <div class="icone-e-texto"> 
+                    <img src="imagens/carrinho.png" alt="carrinho">
+                    <p>CARRINHO</p>
+                </div>
+                <img src="imagens/setaDireita.png" alt="setaDireita"> 
+            </div>
+            <div class="botao-nav">
+                <div class="icone-e-texto"> 
+                    <img src="imagens/perfil.webp" alt="perfil">
+                    <p>PERFIL</p>
+                </div>
+                <img src="imagens/setaDireita.png" alt="setaDireita"> 
+            </div>
+        </nav>
+        
+        <!--Quadros de imagens dos bolos -->
+        <main>
+        <div class="card-produto">
+            <img src="imagens/boloBonito.jpg" style="width: 200px;" alt="bolo"><h3>Bolo de Chocolate</h3>
+            <p>Delicioso bolo de chocolate <br> molhadinho decorado com morangos</p>
+        </div>
+
+        <div class="card-produto">
+            <img src="imagens/boloBonito.jpg" style="width:200px;" alt="bolo";><h3>Bolo de Chocolate</h3>
+            <p>Delicioso bolo de chocolate <br> molhadinho decorado com morangos</p>
+        </div>
+
+        <div class="card-produto"><img src="imagens/boloBonito.jpg" style="width:200px;"alt="bolo"><h3>Bolo de Chocolate</h3>
+            <p>Delicioso bolo de chocolate <br> molhadinho decorado com morangos</p></div>
+
+        <div class="card-produto">
+            <img src="imagens/boloBonito.jpg" style="width:200px;" alt="bolo"><h3>Bolo de Chocolate</h3>
+            <p>Delicioso bolo de chocolate <br> molhadinho decorado com morangos</p>
+        </div>     
+    
+        <div class="card-produto">
+            <img src="imagens/boloBonito.jpg" style="width:200px;" alt="bolo"><h3>Bolo de Chocolate</h3>
+            <p>Delicioso bolo de chocolate <br> molhadinho decorado com morangos</p>
+        </div>
+
+        <div class="card-produto">
+            <img src="imagens/boloBonito.jpg" style="width:200px;" alt="bolo"><h3>Bolo de Chocolate</h3>
+            <p>Delicioso bolo de chocolate <br> molhadinho decorado com morangos</p>
+        </div>
+
+        <div class="card-produto">
+            <img src="imagens/boloBonito.jpg" style="width:200px;" alt="bolo"><h3>Bolo de Chocolate</h3>
+            <p>Delicioso bolo de chocolate <br> molhadinho decorado com morangos</p>
+        </div>
+    </main>
+   
+     
+
+    </article>
+    <footer>
+        <p>Bolos feitos com ❤ </p>
+    </footer>
+</body>
+</html>
