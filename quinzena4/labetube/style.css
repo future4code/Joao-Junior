@@ -8,8 +8,9 @@ p{
 .page-container{
     display: grid;
     min-height: 100vh;
-    grid-template-rows: 70px 1fr 70px;
+    grid-template-rows: 4rem 1fr 4rem;
     grid-template-columns: 1fr;
+    
 }
 
 /* configurações da primeira página. */
@@ -40,6 +41,7 @@ p{
     display: flex;
     align-items: center;
     justify-content: space-between;
+    padding: 0.75rem;
 }
 
 #pesquisa{
@@ -48,8 +50,8 @@ p{
 }
 
 .titulo-e-pesquisa > h1 {
-    padding-right: 775px;
-    padding-left: 20px;
+    padding-right: 48.43rem;
+    padding-left: 0.8rem;
     color: white;
 
 }
@@ -65,12 +67,12 @@ footer{
     background: linear-gradient(90deg, rgba(2,0,36,1) 0%, rgba(9,9,121,1) 35%, rgba(0,212,255,1) 100%);
     color: white;
     text-align: center;
-    padding-top: 12px;
+    padding-top: 1.3rem;
 }
 
 .videos{
     display: flex;
     flex-direction: column;
     align-items: center;
-    padding-top: 12px;
+    padding-top: 1.3rem;
 }
