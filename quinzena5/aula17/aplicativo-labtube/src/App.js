@@ -1,5 +1,7 @@
+import React from "react";
 import logo from './logo.svg';
 import './App.css';
+import CardVideo from "./Componentes/CarddeVideos";
 
 function App() {
   const titulo = "Título do vídeo"
@@ -29,10 +31,8 @@ function App() {
                 </ul>
             </nav>
             <section className="painel-de-videos">
-                <div className="box-pagina-principal media1" onClick={reproduzVideo}>
-                    <img src="https://picsum.photos/400/400?a=1 " alt=""/>
-                    <h4>{titulo}</h4>
-                </div>
+                <CardVideo />
+                
                 <div className="box-pagina-principal media2" onClick={reproduzVideo}>
                     <img src="https://picsum.photos/400/400?a=2 " alt=""/>
                     <h4>{titulo}</h4>
