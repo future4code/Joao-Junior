@@ -6,10 +6,16 @@ import CardPequeno from './components/CardPequeno/CardPequeno';
 import joao from './components/Imagem/perfilcurriculo.png';
 import email from './components/Imagem/icone_email.png';
 import localizacao from './components/Imagem/icone_local.png';
+import styled from 'styled-components';
+
+
+const PageSectionContainer = styled.div`
+  width: 40vw;
+  margin: 10px 0;`
 function App() {
   return (
     <div className="App">
-      <div className="page-section-container">
+      <PageSectionContainer>
         <h2>Dados pessoais</h2>
         <CardGrande 
           imagem={joao}
@@ -27,7 +33,7 @@ function App() {
         <div>
         <CardPequeno className= "smallcard-container" imagem={localizacao} Endereço="Rua dos Devs." />
         </div>
-      </div>
+      </PageSectionContainer>
 
       <div className="page-section-container">
         <h2>Experiências profissionais</h2>
