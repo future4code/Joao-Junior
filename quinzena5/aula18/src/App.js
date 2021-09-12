@@ -2,8 +2,10 @@ import React from 'react';
 import './App.css';
 import CardGrande from './components/CardGrande/CardGrande';
 import ImagemButton from './components/ImagemButton/ImagemButton';
+import CardPequeno from './components/CardPequeno/CardPequeno';
 import joao from './components/Imagem/perfilcurriculo.png';
-
+import email from './components/Imagem/icone_email.png';
+import localizacao from './components/Imagem/icone_local.png';
 function App() {
   return (
     <div className="App">
@@ -19,6 +21,12 @@ function App() {
           imagem="https://image.flaticon.com/icons/png/512/117/117472.png" 
           texto="Ver mais"
         />
+        <div>
+         <CardPequeno className= "smallcard-container" imagem={email} Email="Email:bsbvjoao@gmail.com" />
+        </div>
+        <div>
+        <CardPequeno className= "smallcard-container" imagem={localizacao} Endereço="Rua dos Devs." />
+        </div>
       </div>
 
       <div className="page-section-container">
