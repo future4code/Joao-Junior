@@ -107,3 +107,44 @@ class Post extends React.Component {
 }
 
 export default Post
+
+/* Questão 4
+
+O valor icone invoca as variaveis iconeComentario/iconeCurtida.
+IconeCurtida encontra-se no escopo dentro do render (), enquanto
+iconeComentario é importado da pasta img.
+
+O onClickIcone trás a função onClickComentario da Class Post.
+
+O valorContador trás duas propriedades do objeto state. sendo elas,
+numeroCurtidas e numeroComentarios.
+ 
+  Questão 5
+
+Ele conta o número de comentários.
+
+  Questão 6
+
+ o state.curtido é usado no PostFooter através da variavel iconeCurtida atribuida ao valor icone. 
+ o state.numeroCurtidas é usado tbm no PostFooter através do this.state.numeroCurtidas atribuido ao valorContador. 
+
+ o state.comentando é usado através da arrow function this.onClickComentário
+ atribuida ao valor onClickIcone.
+
+ Questão 9
+
+ Ela nega o estado inicial da propriedade comentando.
+
+ Questão 10.
+
+ Ao clicar, aparece o campo de comentários. Isto acontece porque o estado incial 
+ de comentando é alterado para true, mostrando o campo.
+
+ Questão 11.
+ 
+ Se a condição abaixo for realizada, o componente é ativado e a seção de 
+ comentarios é ocultada.
+ if(this.state.comentando) {
+      componenteComentario = <SecaoComentario aoEnviar={this.aoEnviarComentario}/>
+    }
+*/
