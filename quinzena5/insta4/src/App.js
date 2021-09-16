@@ -1,6 +1,8 @@
 import React from 'react';
 import styled from 'styled-components'
 import Post from './components/Post/Post';
+import Post2 from './components/Post/Post2';
+import Post3 from './components/Post/Post3';
 
 const MainContainer = styled.div`
   display: flex;
@@ -14,6 +16,16 @@ class App extends React.Component {
     return (
       <MainContainer>
         <Post
+          nomeUsuario={'paulinha'}
+          fotoUsuario={'https://picsum.photos/50/50'}
+          fotoPost={'https://picsum.photos/200/150'}
+        />
+        <Post2
+          nomeUsuario={'paulinha'}
+          fotoUsuario={'https://picsum.photos/50/50'}
+          fotoPost={'https://picsum.photos/200/150'}
+        />
+        <Post3
           nomeUsuario={'paulinha'}
           fotoUsuario={'https://picsum.photos/50/50'}
           fotoPost={'https://picsum.photos/200/150'}
