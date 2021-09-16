@@ -1,0 +1,78 @@
+*{
+    margin: 0%;
+    padding: 0%;
+}
+p{
+    padding: 12px;
+}
+.page-container{
+    display: grid;
+    min-height: 100vh;
+    grid-template-rows: 4rem 1fr 4rem;
+    grid-template-columns: 1fr;
+    
+}
+
+/* configurações da primeira página. */
+
+#main-pagina1{
+  display: grid;
+  min-height: 100vh;
+  grid-template-columns: repeat(4, 1fr);
+  padding-top: 20px;
+  align-items: center;
+  
+}
+
+.card{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    box-shadow: 2px 2px 2px darkgray;
+}
+
+.imagens{
+    width: 100%;
+    height: 250px;
+}
+
+.titulo-e-pesquisa{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0.75rem;
+}
+
+#pesquisa{
+    width: 1.5vw;
+    padding-right: 65px;
+}
+
+.titulo-e-pesquisa > h1 {
+    padding-right: 48.43rem;
+    padding-left: 0.8rem;
+    color: white;
+
+}
+
+header{
+    background: rgb(2,0,36);
+background: linear-gradient(90deg, rgba(2,0,36,1) 0%, rgba(9,9,121,1) 35%, rgba(0,212,255,1) 100%);
+
+}
+
+footer{
+    background: rgb(2,0,36);
+    background: linear-gradient(90deg, rgba(2,0,36,1) 0%, rgba(9,9,121,1) 35%, rgba(0,212,255,1) 100%);
+    color: white;
+    text-align: center;
+    padding-top: 1.3rem;
+}
+
+.videos{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-top: 1.3rem;
+}
