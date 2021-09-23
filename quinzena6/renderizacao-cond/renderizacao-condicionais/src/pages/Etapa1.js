@@ -1,21 +1,24 @@
 import React from 'react'
 
+
 class Etapa1 extends React.Component {
     render () {
         return (
             <div>
-                <h1>ETAPA 1 - DADOS GERAIS</h1>
-                <h2>1. Qual o seu nome?</h2>
+                <h2>ETAPA 1 - DADOS GERAIS</h2>
+                <p>1. Qual o seu nome?</p>
                 <input type="text" name="name" />
 
-                <h2>1. Qual a sua idade?</h2>
+                <p>2. Qual a sua idade?</p>
                 <input type="text" name="idade" />
 
-                <h2>1. Qual o seu email?</h2>
+                <p>3. Qual o seu email?</p>
                 <input type="text" name="name" />
 
-                <h2>1. Qual a sua escolaridade?</h2>
+                <p>4. Qual a sua escolaridade?</p>
                 <input type="text" name="name" />
+                   
+                
 
             </div>
         )
