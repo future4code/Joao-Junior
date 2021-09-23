@@ -39,6 +39,7 @@ class App extends React.Component {
   return (
     <div className="container">           
               {this.renderizaEtapa()}
+              <br />
        <button onClick={this.onClickIrParaProximaEtapa}>Próxima etapa</button>
        
     </div>
