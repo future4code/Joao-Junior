@@ -1,6 +1,6 @@
 import React from 'react'
 
-const Lista = ({ prop }) => {
+const Lista = ({ prop, propChange }) => {
     return (
         <div>
             <h1>Labenusers</h1>

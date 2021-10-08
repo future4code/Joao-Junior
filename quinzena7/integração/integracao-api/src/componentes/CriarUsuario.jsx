@@ -1,16 +1,18 @@
 import React from 'react'
 
 
-const CriarUsuario = ({prop}) => {
+const CriarUsuario = ({prop, propChange, passValue}) => {
     return (
         <div >
             <h1>Labenusers</h1>
-            <button onClick={prop}>Trocar de página</button>
+            <button 
+            onClick={prop}
+            onChange={propChange}>Trocar de página</button>
         
             <h2>Criar usuário</h2>
  
             <div className="nome-email">
-            <input  placeholder="nome"/>
+            <input value={passValue} onChange={propChange} placeholder="nome"/>
             <input  placeholder="email"/>
             <button>Criar</button></div>
        </div>
