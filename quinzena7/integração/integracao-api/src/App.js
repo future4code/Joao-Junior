@@ -14,6 +14,8 @@ const headers = {
 }
 
 
+
+
 export default class App extends React.Component {
   state = {
     clicou: true,
@@ -26,8 +28,11 @@ export default class App extends React.Component {
   }
 
   pegarUsers = () => {
-    axios
-    .get(url, headers)
+    axios.get('https://us-central1-labenu-apis.cloudfunctions.net/labenusers/users',{     
+    headers: {
+      Authorization: "joao-helio-banu",
+    }
+    })
     .then((response) => {
       this.setState({ allUsers: response.data.result.list})
     })
@@ -53,9 +58,7 @@ export default class App extends React.Component {
     this.setState({ getUsers: event.target.value });
   };
 
- /*  passValue = () => {
-    this.state.getUsers
-  } */
+ 
 
   renderizaTela = () => {
     if (this.state.clicou) {
