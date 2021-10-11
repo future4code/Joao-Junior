@@ -1,9 +1,9 @@
-
 import './App.css';
 import axios from 'axios'
 import React from 'react'
-import CriarUsuario from './componentes/CriarUsuario'
-import Lista from './componentes/Lista'
+
+import TelaCadastro from './componentes/TelaCadastro';
+import TelaListaUsuarios from './componentes/TelaLista.Usuario';
 
 const url = 'https://us-central1-labenu-apis.cloudfunctions.net/labenusers/users'
 
@@ -14,16 +14,86 @@ const headers = {
 }
 
 
-
-
 export default class App extends React.Component {
   state = {
-    clicou: true,
-    allUsers: [],
-    getUsers: ""
+    telaAtual: "cadastro",
+  }
+  
+  escolheTela = () => {
+    switch (this.state.telaAtual){
+      case "cadastro":
+        return <TelaCadastro irParaLista={this.irParaLista} />
+      case "lista":
+        return <TelaListaUsuarios irParaCadastro={this.irParaCadastro} />
+        default:
+          return <div> Erro! Página não encontrada.</div>
+    }
   }
 
-  componentDidMount() {
+  irParaCadastro = () => {
+    this.setState({telaAtual: "cadastro"})
+  }
+
+  irParaLista = () => {
+    this.setState({telaAtual: "lista"})
+  }
+
+  render() {
+    return (
+      <div>
+        {this.escolheTela()}
+      </div>
+      )
+    }
+  }
+        
+    
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+ /*  componentDidMount() {
     this.pegarUsers()
   }
 
@@ -61,7 +131,7 @@ export default class App extends React.Component {
  
 
   renderizaTela = () => {
-    if (this.state.clicou) {
+    if (this.state.telaAtual) {
       return (
         <CriarUsuario prop={this.trocarPagina} propChange={this.onChangegetUsers} passValue={this.passValue}/>
       )
@@ -76,7 +146,7 @@ export default class App extends React.Component {
   }
 
   trocarPagina = () => {
-    this.setState({clicou: !this.state.clicou})
+    this.setState({telaAtual: !this.state.telaAtual})
   }
 
  
@@ -95,3 +165,4 @@ export default class App extends React.Component {
   }
 
 
+ */
