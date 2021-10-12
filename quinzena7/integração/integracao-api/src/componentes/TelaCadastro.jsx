@@ -29,10 +29,12 @@ export default class TelaCadastro extends React.Component {
        })
        .then((res) => {
             alert("Usuário Cadastrado com sucesso!")
+            this.setState({nome: "", email: ""})
        })
        .catch((err) => {
            const erro = err.response.data.message ? "Usuário já cadastrado" : ""
            alert(erro)
+           this.setState({nome: "", email: ""})
             
        })
     }
@@ -45,7 +47,7 @@ export default class TelaCadastro extends React.Component {
                 <h2>Cadastro</h2> 
                 <input 
                 placeholder={'Nome'}
-                value={this.state.name}
+                value={this.state.nome}
                 onChange={this.handleNome} />
 
                 <input 
