@@ -2,6 +2,7 @@ import React from 'react'
 import axios from 'axios'
 import styled from "styled-components"
 
+
 const CardUsuario = styled.div`
     border: 1px solid black;
     padding: 10px;
@@ -20,9 +21,9 @@ export default class TelaListaUsuarios extends React.Component {
         this.pegarUsuarios()
     }
 
-    pegarUsuarios = () => {
+    pegarUsuarios = async() => {
         const url = "https://us-central1-labenu-apis.cloudfunctions.net/labenusers/users"
-        axios.get(url, {
+       /*  axios.get(url, {
             headers: {
                 Authorization: "joao-helio-banu"
             }
@@ -32,7 +33,18 @@ export default class TelaListaUsuarios extends React.Component {
         })
         .catch((err) => {
             alert("Erro. tente novamente")
-        })
+        }) */
+        try {
+            const res = await axios.get(url, {
+                headers: {
+                    Authorization: "joao-helio-banu"
+                }
+            })
+            this.setState({usuarios: res.data})
+
+        } catch (err) {
+            alert("Erro. tente novamente")
+        }
     }
 
     deletarUsuario = (id) => {
