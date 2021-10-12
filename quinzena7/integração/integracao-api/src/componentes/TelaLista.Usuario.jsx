@@ -35,13 +35,29 @@ export default class TelaListaUsuarios extends React.Component {
         })
     }
 
+    deletarUsuario = (id) => {
+       const url = `https://us-central1-labenu-apis.cloudfunctions.net/labenusers/users/${id}`
+       axios.delete(url, {
+           headers: {
+            Authorization: "joao-helio-banu"
+           }
+       })
+       .then((res) => {
+           alert("Usuário excluído")
+           this.pegarUsuarios()
+       })
+       .catch((err) => {
+           alert("Erro. Tente novamente.")
+       })
+    }
+
     render () {
         const listaUsuarios = this.state.usuarios.map((user) => {
             return (
             <CardUsuario key={user.id}>
                 {user.name}
-                <button>x</button>
-                </CardUsuario>
+                <button onClick={() => this.deletarUsuario(user.id)}>x</button>
+            </CardUsuario>
             )
         })
         return (
