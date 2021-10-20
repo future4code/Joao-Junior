@@ -27,7 +27,7 @@ const SecaoComentario = (props) => {
 				value={secaoComentario}
 				onChange={onChangeComentario}
 			/>
-			<button onClick={() => { props.onChangeComentario() }} >Enviar</button>
+			<button onClick={() => { props.enviarComentario() }} >Enviar</button>
 		</CommentContainer>
 	)
 }

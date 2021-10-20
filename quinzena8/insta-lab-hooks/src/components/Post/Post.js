@@ -53,8 +53,8 @@ const Post = (props) => {
   )
       
 
-  const enviarComentario = (comentario) => {
-    const listaDeComentarios = [...comentarios, comentario]
+  const enviarComentario = (secaoComentario) => {
+    const listaDeComentarios = [...comentarios, secaoComentario]
     setcomentarios(listaDeComentarios)
     setcomentando(false)
     setnumeroComentarios(numeroComentarios + 1)   
