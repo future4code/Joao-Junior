@@ -1,4 +1,37 @@
 .App {
   text-align: center;
+ 
 }
 
+.container {
+  border: 1px solid black;
+  width: 40vw;
+  height: 90vh;
+  text-align: center;
+  margin: auto;
+}
+
+.header {
+  display: flex;
+    flex-direction: row;
+    text-align: center;
+    align-items: baseline;
+    border: 1px solid black;
+    justify-content: end;
+    justify-content: space-between;
+    padding: 10p;
+}
+
+.astromatch-head {
+  width: 100vw;
+  text-align: center;
+}
+
+.button-contatos {
+  margin-right: 5px;
+}
+
+.imagem-avatar {
+  width: 80%;
+  padding: 15px;
+}
