@@ -10,7 +10,8 @@ function App() {
        <div className="container">
 
          <div className='header'>
-            <h1 className="astromatch-head">astromatch</h1>
+            <h1 className="astromatch-head">astromatch</h1> 
+            <hr/>
             <button className='button-contatos'> Contatos </button>
          </div>
          
