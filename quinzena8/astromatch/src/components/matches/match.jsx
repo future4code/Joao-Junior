@@ -1,18 +1,20 @@
 import React from 'react'
-import style from '../matchStyle.css'
+import Styled from './style.css'
 
-const match = () => {
+
+const Match = () => {
     return (
-        <div>
-            <div className="match-header">
-                <h1>Astromatch</h1>
+        <div className="match-container">
+
+            <div className='header-Match'>
                 <button className='match-button'>voltar</button>
+                <h1 className='match-h1'>Astromatch</h1>
             </div> 
         </div>
     )
 }
 
-export default match
+export default Match
 
 
  

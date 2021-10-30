@@ -1,6 +1,7 @@
 import React from 'react'
+import imagem from '../../imagens/imagemteste.jpg'
 
-const index = () => {
+const Index = () => {
     return (
         
             <div className="App">
@@ -25,4 +26,4 @@ const index = () => {
     )
 }
 
-export default index
+export default Index

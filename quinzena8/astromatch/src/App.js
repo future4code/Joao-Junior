@@ -1,20 +1,30 @@
 import React from 'react';
 import './App.css';
 import imagem from './imagens/imagemteste.jpg'
-import match from './components/matches/match'
+import  Match  from './components/matches/Match'
+import Index from './components/home/Index'
 
 
 function App() {
 
-  
 
+ 
+  
   return (
+
     <div className="App">
-       <home />         
+      
+      {/* <Index /> */}
+      <Match />
+          
     </div>
       
+
+
       );
     }
+
+
 
 
     

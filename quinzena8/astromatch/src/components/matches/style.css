@@ -1,0 +1,29 @@
+.match-container {
+  border: 1px solid black;  
+  width: 40vw;
+  height: 90vh;
+  text-align: center;
+  margin: auto;
+
+ 
+}
+
+.header-Match { 
+  display: flex;
+  flex-direction: row;
+  text-align: center;
+  align-items: baseline;
+  border-bottom: 1px solid lightgray;
+  justify-content: end;
+  justify-content: space-between;
+  padding: 10p;
+}
+
+.match-h1 {
+  width: 60vw;
+  text-align: center;
+}
+
+.match-button {
+  margin-left: 10px;
+}
