@@ -1,7 +1,26 @@
-import React from 'react'
+import React, { useState } from 'react'
 import imagem from '../../imagens/imagemteste.jpg'
+import Match from '../matches/Match'
 
 const Index = () => {
+
+    // const [pageName, setpageName] = useState("home")
+ 
+    // const getPagina = () => {
+    //   switch (pageName) {
+    //     case "home":
+    //       return <Index/>
+    //     case "matches":
+    //       return <Match/>
+    //       default:
+    //         return <Index/>
+    //   }
+    // }
+      
+    // const goMatch = () =>{
+    //   setpageName("matches")
+    // }
+
     return (
         
             <div className="App">
