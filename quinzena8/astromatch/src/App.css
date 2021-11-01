@@ -56,3 +56,15 @@
   bottom: 5px;
   right: 5px;
 }
+
+.button-trocar-pagina {
+  display: flex;
+  align-items: baseline;
+  align-items: center;
+  margin-top: 1%;
+
+  position: fixed;
+  top: 5px;
+  right: 5px;
+  border-radius: 25%;
+}

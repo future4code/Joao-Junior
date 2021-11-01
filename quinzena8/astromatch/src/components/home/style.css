@@ -77,18 +77,19 @@
 
 
 .nome-idade-descricao {
-  height: 30%;
+  height: 35%;
   position: absolute;
   bottom: 0px;
-  width: 100%;
+  width: 85%;
   background-image: linear-gradient(to top, rgba(0, 0, 0, 0.5), transparent);
   color: white;
   display: flex;
   flex-direction: column;
   -webkit-box-pack: end;
   justify-content: flex-end;
-  padding: 15px;
+  padding: 15px 15px 15px 25px;
   z-index: 2;
+  margin-bottom: 25%;
 }
 .nome-idade {
     display: flex;

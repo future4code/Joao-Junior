@@ -35,7 +35,7 @@ const changePage = () =>{
       
       {getPagina()}
 
-      <button onClick={changePage} changePage={changePage}> {pageName === "home"? "Ir para Matches" : "Ir para Home"} </button>
+      <button className='button-trocar-pagina' onClick={changePage} changePage={changePage}> {pageName === "home"? "Matches" : "Home"} </button>
       <button className='button-limpar-matches'>Limpar Matches</button>
           
     </div>

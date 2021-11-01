@@ -16,11 +16,11 @@ const Index = (changePage) => {
                     <div className='header-index'>
                         <h1 className='astromatch-name'>Astromatch</h1>
 
-                        <div className='div-button'>
+                        {/* <div className='div-button'>
                             <button className='button-contatos'>
                                  Contatos
                             </button>
-                        </div>
+                        </div> */}
 
                     </div>
 
