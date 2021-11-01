@@ -5,6 +5,7 @@ import  Match  from './components/matches/Match'
 import Index from './components/home/Index'
 
 
+
 function App() {
 
 const [pageName, setpageName] = useState("home")
@@ -33,8 +34,9 @@ const changePage = () =>{
     <div className="App">
       
       {getPagina()}
-      <button onClick={changePage}> {pageName === "home"? "Ir para Matches" : "Ir para Home"} </button>
-      <button>Limpar Matches</button>
+
+      <button onClick={changePage} changePage={changePage}> {pageName === "home"? "Ir para Matches" : "Ir para Home"} </button>
+      <button className='button-limpar-matches'>Limpar Matches</button>
           
     </div>
       
