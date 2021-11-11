@@ -1,7 +1,7 @@
 import React from 'react'
-import { BrownseRouter, Routes, Route } from 'react-router-dom'
 import { useNavigate } from 'react-router-dom'
 import styled from 'styled-components'
+
 
 const Container = styled.div`
     text-align: center;

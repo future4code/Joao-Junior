@@ -5,6 +5,7 @@ import Home from './pages/Home'
 import Login from './pages/Login'
 import Viagens from './pages/Viagens'
 import Inscrevase from './pages/Inscreavase'
+import Painel from './pages/Painel'
 
 
 
@@ -17,6 +18,7 @@ function App() {
       <Route exact path="/viagens" element={<Viagens />} />
       <Route exact path="/login" element={<Login />} />
       <Route exact path="/inscrevase" element={<Inscrevase />} />
+      <Route exact path="/painel" element={<Painel />} />
       
     </Routes>
   </BrowserRouter>
