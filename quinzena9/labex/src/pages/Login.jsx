@@ -32,8 +32,14 @@ export default function Login(){
             email,
             password
         })
-        console.log(response)
-        // localStorage.setItem("token", token)
+        if(response.token){
+            localStorage.setItem("token", response.token)
+            navigate("/painel")
+        } else {
+            // alert(response.error.data.message)
+            alert("SENHA ERRADA, FI DA DISGRAÇA")
+        }
+       
     }
     
        
