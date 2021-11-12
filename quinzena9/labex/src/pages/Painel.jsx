@@ -1,6 +1,8 @@
 import React from 'react'
 import { useNavigate } from 'react-router-dom'
 import styled from 'styled-components'
+import { getTripDetails } from '../services/index'
+import { useEffect } from 'react'
 
 const Container = styled.div`
     text-align: center;
@@ -8,8 +10,15 @@ const Container = styled.div`
     `
 
 export default function Painel(){
-
     const navigate = useNavigate()
+    useEffect(() => {
+        const fetch = async () => {
+            const token = localStorage.getItem("token")
+            const response = await getTripDetails(token, "QuWBcnjEQXAlxjLtAjLS")
+            console.log(response)
+        }
+        fetch()
+    }, [])    
 
     return (
         <Container>
