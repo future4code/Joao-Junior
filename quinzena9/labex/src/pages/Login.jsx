@@ -16,10 +16,11 @@ width: 100%;
 `
 
 export default function Login(){
-
+        // Estados e Routers
     const [ email, setEmail] = useState("")
     const [ password, setPassword] = useState("")
     const navigate = useNavigate()
+            // Funções
 
     const onChangeEmail = (e) => {
         setEmail(e.target.value)
@@ -27,6 +28,7 @@ export default function Login(){
     const onChangePassword = (e) => {
         setPassword(e.target.value)
     }
+
     const onCLickLogin = async () => {
         const response = await login({
             email,
@@ -36,13 +38,11 @@ export default function Login(){
             localStorage.setItem("token", response.token)
             navigate("/painel")
         } else {
-            // alert(response.error.data.message)
-            alert("SENHA ERRADA, FI DA DISGRAÇA")
+            alert(response.error.data.message)            
         }
        
     }
-    
-       
+          
 
     return(
         <Container>

@@ -20,16 +20,24 @@ export default function Inscrevase() {
 
 const navigate = useNavigate()
 
+// const enviarDados = () => {
+//     const body = {
+
+//     }
+// }
+
     return(
         <Container>
             <h1>Inscreva-se para uma viagem</h1>
             <InputContainer>
+            
                 <input type="text" />
                 <input type="text" />
                 <input type="text" />
                 <input type="text" />
                 <input type="text" />
                 <input type="text" />
+            
             </InputContainer>
 
             <div>
