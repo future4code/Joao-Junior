@@ -3,6 +3,7 @@ import { useNavigate } from 'react-router-dom'
 import styled from 'styled-components'
 import { getTripDetails } from '../services/index'
 import { useEffect } from 'react'
+import { useProtectPage } from '../hooks/index'
 
 const Container = styled.div`
     text-align: center;
@@ -11,6 +12,7 @@ const Container = styled.div`
 
 export default function Painel(){
     const navigate = useNavigate()
+    useProtectPage()
     useEffect(() => {
         const fetch = async () => {
             const token = localStorage.getItem("token")

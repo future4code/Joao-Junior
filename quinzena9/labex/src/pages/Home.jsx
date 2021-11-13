@@ -1,6 +1,6 @@
 import React from 'react'
-import { BrowserRouter, Routes, Route, useNavigate } from 'react-router-dom'
-import Viagens from './Viagens'
+import { useNavigate } from 'react-router-dom'
+
 import Login from './Login'
 import styled from 'styled-components'
 
