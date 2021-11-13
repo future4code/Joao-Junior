@@ -29,7 +29,8 @@ export default function Login(){
         setPassword(e.target.value)
     }
 
-    const onCLickLogin = async () => {
+    const onCLickLogin = async (event) => {
+        event.preventDefault()
         const response = await login({
             email,
             password
@@ -49,16 +50,23 @@ export default function Login(){
         <h1>Login</h1>
 
         <InputContainer>
+        <form onSubmit={onCLickLogin}>
             <p>Email</p>
             <input value={email} onChange={onChangeEmail} type="text" placeholder="Email" />
+
             <p>Senha</p>
             <input value={password} onChange={onChangePassword} type="password" name="password" placeholder='Senha' id="nav" />
+            <div>
+                <button>Entrar</button>
+                <button onClick={() => navigate("/")}>Voltar</button>
+            </div>
+        </form>
         </InputContainer>
-
-        <div>
-            <button onClick={() => navigate("/")}>Voltar</button>
-            <button onClick={onCLickLogin}>Entrar</button>
-        </div>
         </Container>
     )
 }
+
+       
+            
+          
+       
